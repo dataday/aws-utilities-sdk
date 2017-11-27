@@ -1,0 +1,32 @@
+{
+    "Statement": [
+        {
+            "Action": [
+                "autoscaling:Describe",
+                "cloudformation:Describe",
+                "cloudformation:GetTemplate",
+                "cloudformation:List*",
+                "ec2:Describe*",
+                "ec2:GetConsoleOutput",
+                "s3:List*",
+                "s3:GetBucketLocation",
+                "s3:GetBucketPolicy",
+                "s3:GetLifecycleConfiguration",
+                "tag:Get*"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+              "*"
+            ]
+        },
+        {
+            "Sid": "AssumeRolePrincipalStaff",
+            "Action": "sts:AssumeRole",
+            "Effect": "Allow",
+            "Resource": [
+              "arn:aws:iam::123456789012:role/support"
+            ]
+        }
+    ],
+    "Version": "2012-10-17"
+}

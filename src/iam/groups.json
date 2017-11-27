@@ -1,0 +1,17 @@
+[
+    {
+        "staff": [
+            "ReadOnlyAccess"
+        ]
+    },
+    {
+        "development": [
+            "PowerUserAccess"
+        ]
+    },
+    {
+        "admin": [
+            "AdministratorAccess"
+        ]
+    }
+]

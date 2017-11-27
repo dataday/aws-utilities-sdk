@@ -1,0 +1,17 @@
+[
+    {
+        "support": [
+            "job-function/SupportUser"
+        ]
+    },
+    {
+        "service": [
+            "AWSElasticBeanstalkFullAccess"
+        ]
+    },
+    {
+        "publisher": [
+            "service-role/AWSLambdaRole"
+        ]
+    }
+]
